@@ -1,5 +1,5 @@
 
-╮( ˘ ､ ˘ )╭
+(ﾉ>ω<)ﾉ :｡･:*:･ﾟ’★,｡･:*:･ﾟ’☆      ╮( ˘ ､ ˘ )╭
          
 
 ## Bonjour à toi, futur utilisateur de Bubly !
