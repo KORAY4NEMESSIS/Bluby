@@ -1,34 +1,18 @@
-                                                                                              
-                                     bbbbbbbb                                                 
-BBBBBBBBBBBBBBBBB                    b::::::b            lllllll                              
-B::::::::::::::::B                   b::::::b            l:::::l                              
-B::::::BBBBBB:::::B                  b::::::b            l:::::l                              
-BB:::::B     B:::::B                  b:::::b            l:::::l                              
-  B::::B     B:::::Buuuuuu    uuuuuu  b:::::bbbbbbbbb     l::::lyyyyyyy           yyyyyyy     
-  B::::B     B:::::Bu::::u    u::::u  b::::::::::::::bb   l::::l y:::::y         y:::::y      
-  B::::BBBBBB:::::B u::::u    u::::u  b::::::::::::::::b  l::::l  y:::::y       y:::::y       
-  B:::::::::::::BB  u::::u    u::::u  b:::::bbbbb:::::::b l::::l   y:::::y     y:::::y        
-  B::::BBBBBB:::::B u::::u    u::::u  b:::::b    b::::::b l::::l    y:::::y   y:::::y         
-  B::::B     B:::::Bu::::u    u::::u  b:::::b     b:::::b l::::l     y:::::y y:::::y          
-  B::::B     B:::::Bu::::u    u::::u  b:::::b     b:::::b l::::l      y:::::y:::::y           
-  B::::B     B:::::Bu:::::uuuu:::::u  b:::::b     b:::::b l::::l       y:::::::::y            
-BB:::::BBBBBB::::::Bu:::::::::::::::uub:::::bbbbbb::::::bl::::::l       y:::::::y             
-B:::::::::::::::::B  u:::::::::::::::ub::::::::::::::::b l::::::l        y:::::y              
-B::::::::::::::::B    uu::::::::uu:::ub:::::::::::::::b  l::::::l       y:::::y               
-BBBBBBBBBBBBBBBBB       uuuuuuuu  uuuubbbbbbbbbbbbbbbb   llllllll      y:::::y                
-                                                                      y:::::y                 
-                                                                     y:::::y                  
-                                                                    y:::::y                   
-                                                                   y:::::y                    
-                                                                  yyyyyyy     By ! KAEY ( V2LAN )                
+
+  ____  _       _           
+ |  _ \| |     | |          
+ | |_) | |_   _| |__  _   _ 
+ |  _ <| | | | | '_ \| | | |
+ | |_) | | |_| | |_) | |_| |
+ |____/|_|\__,_|_.__/ \__, |
+                       __/ |
+                      |___/ 
+         
 
 ## Bonjour à toi, futur utilisateur de Bubly !
 
-### Tu n'as pas d'inspiration pour ton programme aujourd'hui ?
-Alors Bubly est ton ami !
-
 ### Pas d'inspi ? Bluy est ton amis
-Bubly est l'ami qui t'aidera à rester le développeur que tu aspirez à être.
+Bubly est l'ami qui t'aidera à rester le développeur que tu penses être.
 
 ### Fonctionnalités actuelles
 Pour l'instant, Bubly est une pop-up de bureau assez restreinte qui te propose des idées de proramme à faire dans le langage choisis en tant réel, mais de nouvelles fonctionnalités arrivent rapidement !
