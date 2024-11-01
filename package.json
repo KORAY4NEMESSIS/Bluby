@@ -1,0 +1,50 @@
+{
+    "name": "bluby",
+    "version": "1.0.0",
+    "description": "Une pop-up de bureau pour les développeurs indécis.",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "build": "electron-builder"
+    },
+    "keywords": [
+      "Electron",
+      "application",
+      "bureau"
+    ],
+    "author": "KAEY",
+    "license": "MIT",
+    "dependencies": {
+      "electron": "^25.0.0",
+      "axios": "^1.0.0" 
+    },
+    "devDependencies": {
+      "electron-builder": "^24.0.0",
+      "electron-updater": "^5.0.0"
+    },
+    "build": {
+      "appId": "com.kaey.bluby",
+      "productName": "Bluby",
+      "files": [
+        "dist/**/*",
+        "main.js",
+        "index.html",
+        "app.py",
+        "package.json"
+      ],
+      "mac": {
+        "category": "public.app-category.utilities"
+      },
+      "win": {
+        "target": [
+          "nsis"
+        ]
+      },
+      "linux": {
+        "target": [
+          "AppImage"
+        ]
+      }
+    }
+  }
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLUBY</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="header">BLUBY</div>
+
+    <div class="fire">
+      <div class="fire-left">
+        <div class="main-fire"></div>
+        <div class="particle-fire"></div>
+      </div>
+      <div class="fire-center">
+        <div class="main-fire"></div>
+        <div class="particle-fire"></div>
+      </div>
+      <div class="fire-right">
+        <div class="main-fire"></div>
+        <div class="particle-fire"></div>
+      </div>
+      <div class="fire-bottom">
+        <div class="main-fire"></div>
+      </div>
+    </div>
+
+  <div class="container">
+    <h1>Choisissez votre langage de programmation</h1>
+    <ul id="languages">
+      <li onclick="chooseLanguage('Python')">Python</li>
+      <li onclick="chooseLanguage('JavaScript')">JavaScript</li>
+      <li onclick="chooseLanguage('Java')">Java</li>
+      <li onclick="chooseLanguage('C++')">C++</li>
+      <li onclick="chooseLanguage('C#')">C#</li>
+      <li onclick="chooseLanguage('Ruby')">Ruby</li>
+      <li onclick="chooseLanguage('Rust')">Rust</li>
+      <li onclick="chooseLanguage('Go')">Go</li>
+      <li onclick="chooseLanguage('Html/CSS')">Html/CSS</li>
+      <li onclick="chooseLanguage('Dart')">Dart</li>
+    </ul>
+    <div id="result"></div>
+  </div>
+
+  <script>
+
+function chooseLanguage(language) {
+    const url = `http://localhost:5000/project?language=${encodeURIComponent(language)}`;
+
+    fetch(url)
+      .then(response => {
+        console.log(response)
+        if (!response.ok) {
+          throw new Error('Erreur lors de la récupération du projet.');
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data.error) {
+          document.getElementById('result').innerText = data.error;
+          console.log(data)
+        } else {
+          document.getElementById('result').innerText = `Projet pour ${language}: ${data.project}`;
+        }
+      })
+      .catch(error => {
+        console.error('Erreur:', error);
+        document.getElementById('result').innerText = 'Une erreur est survenue lors de la récupération du projet.';
+      });
+          document.body.style.cursor = 'wait'
+          localStorage.setItem('selectedLanguage', language);
+
+          window.location.href = 'loading.html';
+      }
+
+  </script>
+</body>
+</html>

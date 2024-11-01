@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cherry+Bomb+One&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .header{
+    border: 1px solid #ffffff;
+    height: 50px;
+    width: 1534px;
+    background-color: #ffffff;
+    position: absolute;
+    top:0;
+    left: 0;
+    box-shadow: 0 10px 10px #110f0f60;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    z-index: 1;
+  }
+
+  .container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #110f0f60;
+    position: relative;
+    z-index: 0;
+    top: 120px;
+
+  }
+  
+   
+  .loader{
+    font-size: 30px;
+    color: #0056b3;
+  }
+
+  #result{
+    font-size: 50px;
+    color: #0056b3;
+  }
+
+  #timer{
+    color: #00000098;
+    font-size: 30px;
+    margin: 5px;
+  }
+
+  .fire {
+    position: absolute;
+    top: 19px;
+    left: 150px;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+  }
+  
+  .fire-center {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: scaleUpDown 3s ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  
+  .fire-center .main-fire {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(farthest-corner at 10px 0, #007bff 0%, #0562c6 95%);
+    transform: scaleX(0.8) rotate(45deg);
+    border-radius: 0 40% 60% 40%;
+    filter: drop-shadow(0 0 10px #007bff);
+  }
+  
+  .fire-center .particle-fire {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #007bff);
+    animation: particleUp 2s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  
+  .fire-right {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: shake 2s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  
+  .fire-right .main-fire {
+    position: absolute;
+    top: 15%;
+    right: -25%;
+    width: 80%;
+    height: 80%;
+    background-color: #2481e4;
+    transform: scaleX(0.8) rotate(45deg);
+    border-radius: 0 40% 60% 40%;
+    filter: drop-shadow(0 0 10px #007bff);
+  }
+  
+  .fire-right .particle-fire {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #0b70dc;
+    transform: scaleX(0.8) rotate(45deg);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #2185ef);
+    animation: particleUp 2s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  
+  .fire-left {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: shake 3s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  
+  .fire-left .main-fire {
+    position: absolute;
+    top: 15%;
+    left: -20%;
+    width: 80%;
+    height: 80%;
+    background-color: #498cd4;
+    transform: scaleX(0.8) rotate(45deg);
+    border-radius: 0 40% 60% 40%;
+    filter: drop-shadow(0 0 10px #1078e6);
+  }
+  
+  .fire-left .particle-fire {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 10%;
+    height: 10%;
+    background-color: #007bff;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #007bff);
+    animation: particleUp 3s infinite ease-out 0;
+    animation-fill-mode: both;
+  }
+  
+  .fire-bottom .main-fire {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 75%;
+    height: 75%;
+    background-color: #007bff;
+    transform: scaleX(0.8) rotate(45deg);
+    border-radius: 0 40% 100% 40%;
+    filter: blur(10px);
+    animation: glow 2s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+
+@media (min-width: 1024px) {
+    .header {
+      height: 70px; 
+      width: 100%; 
+      font-size: 50px; 
+    }
+
+    #result {
+      font-size: 24px; 
+    }
+  
+    .fire {
+        position: absolute;
+        top: 30px;
+        left: 180px;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+      height: 60px;
+      font-size: 40px; 
+    }
+  
+    #result {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header {
+      height: 50px; 
+      font-size: 30px; 
+    }
+
+    #result {
+      font-size: 16px; 
+    }
+  }
+  
+
