@@ -4,7 +4,7 @@
 
 ## Bonjour à toi, futur utilisateur de Bubly !
 
-### Pas d'inspi ? Bluy est ton amis
+### Pas d'inspi ? Bluby est ton amis
 Bubly est l'ami qui t'aidera à rester le développeur que tu penses être.
 
 ### Fonctionnalités actuelles
